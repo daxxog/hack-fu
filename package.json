@@ -1,0 +1,39 @@
+{
+    "name"        : "hack-fu",
+    "description" : "JavaScript function hacking and injection library",
+    "homepage"    : "https://github.com/daxxog/hack-fu",
+    "main"        : "hack-fu.min.js",
+    "version"     : "0.0.1",
+    "engines": {
+        "node" : ">=0.10.33"
+    },
+    "maintainers": [{
+        "name"  : "David Volm",
+        "email" : "david@volminator.com",
+        "web"   : "http://daxxog.com/"
+    }],
+    "repository": {
+        "type" : "git",
+        "url"  : "https://github.com/daxxog/hack-fu.git"
+    },
+    "devDependencies": {
+        "bitfactory": "*",
+        "stoptime": "*",
+        "uglify-js": "*",
+        "vows": "*"
+    },
+    "scripts": {
+        "build": "node make.js",
+        "test": "vows test/*",
+        "start": "node cli.js",
+        "prepublish": "npm run build"
+    },
+    "files": [
+        "cli.min.js",
+        "hack-fu.min.js",
+        "./bin/hack-fu"
+    ],
+    "bin": {
+        "hack-fu" : "./bin/hack-fu"
+    }
+}
