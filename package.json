@@ -25,15 +25,9 @@
     "scripts": {
         "build": "node make.js",
         "test": "vows test/*",
-        "start": "node cli.js",
         "prepublish": "npm run build"
     },
     "files": [
-        "cli.min.js",
-        "hack-fu.min.js",
-        "./bin/hack-fu"
-    ],
-    "bin": {
-        "hack-fu" : "./bin/hack-fu"
-    }
+        "hack-fu.min.js"
+    ]
 }

@@ -28,10 +28,6 @@ bitfactory.make({ //routes
         "hack-fu.min.js": ["header", function(cb) {
             fs.writeFileSync('hack-fu.min.js', header + UglifyJS.minify('hack-fu.js').code);
             cb();
-        }],
-        "cli.min.js": ["header", function(cb) {
-            fs.writeFileSync('cli.min.js', header + UglifyJS.minify('cli.js').code);
-            cb();
         }]
     }
 });

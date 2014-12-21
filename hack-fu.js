@@ -21,6 +21,26 @@
   }
 }(this, function() {
     var HackFu;
-    
+
+    HackFu = function(parent, child) {
+        var isFu = HackFu.ObjectToArray(arguments).map(function(x) { //magic validator
+            return typeof x;
+        }).join('') === 'functionfunction';
+
+        if(isFu) {
+            return function() {
+                return parent.apply(this, child(HackFu.ObjectToArray(arguments)));
+            };
+        } else {
+            return;
+        }
+    };
+
+    HackFu.ObjectToArray = function(o) {
+        return Array.prototype.map.call(o, function(x) {
+            return x;
+        });
+    };
+
     return HackFu;
 }));
