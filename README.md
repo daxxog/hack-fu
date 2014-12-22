@@ -15,7 +15,7 @@ edge
 ```bash
 npm install -g https://github.com/daxxog/hack-fu/tarball/master
 ```
-browser
+[browser](https://github.com/daxxog/curlthis)
 ```bash
 curlthis hack-fu
 ```
