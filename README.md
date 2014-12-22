@@ -15,6 +15,10 @@ edge
 ```bash
 npm install -g https://github.com/daxxog/hack-fu/tarball/master
 ```
+browser
+```bash
+curlthis hack-fu
+```
 
 [travis-image]: https://img.shields.io/travis/daxxog/hack-fu.png?branch=master
 [travis-url]: https://travis-ci.org/daxxog/hack-fu
