@@ -9,11 +9,11 @@ Install
 -------
 stable
 ```bash
-npm install -g hack-fu
+npm install hack-fu
 ```
 edge
 ```bash
-npm install -g https://github.com/daxxog/hack-fu/tarball/master
+npm install https://github.com/daxxog/hack-fu/tarball/master
 ```
 [browser](https://github.com/daxxog/curlthis)
 ```bash
